@@ -33,8 +33,16 @@
     }
     
 
-@media screen and (max-width:767px){
+@media screen and (max-width:768px){
     aside{
         display: none;
     }
+}
+aside ul {
+    list-style-type:none;
+    padding-left:0px;
+}
+aside ul li {
+    margin-bottom:10px;
+    line-height: 1;
 }
