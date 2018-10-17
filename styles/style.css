@@ -54,4 +54,9 @@ section ul li {
 	text-align: justify;
 	text-justify: inter-word;	
 }
-	
+#planet_definition li {
+	padding-bottom:10px;
+	text-align: justify;
+	text-justify: inter-word;
+}
+
