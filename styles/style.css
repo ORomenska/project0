@@ -46,3 +46,41 @@ aside ul li {
     margin-bottom:10px;
     line-height: 1;
 }
+
+article p {
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+.significant_dates li {
+    text-align: justify;
+    text-justify: inter-word; 
+}
+
+main {
+
+    padding-top:100px;
+    padding-bottom:100px;
+}
+article header {
+
+    text-align:center;
+    font-size:2em;
+}
+
+article p {
+
+    text-indent: 25px;
+    margin-bottom:0;
+}
+
+section p:first-child {
+
+    margin-top:20px;
+}
+
+section p:last-child {
+    
+    margin-bottom:20px;
+
+}
