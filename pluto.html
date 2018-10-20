@@ -5,26 +5,54 @@
 		<meta lang="en-US">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<title>Dwarf planets - Pluto</title>
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 		<link rel="stylesheet" href="styles/style.css">	
 		</head>
 		<body>
-            <header>
-				<img class="header_image" src="pictures/sky_header.jpg"
-            </header>
-            <nav>
-				<a href="index.html">Dwarf planets</a>
-				<a href="pluto.html">Pluto</a>
-				<a href="ceres.html">Ceres</a>
-				<a href="makemake.html">Makemake</a>
-				<a href="haumea.html">Haumea</a>
-				<a href="eris.html">Eris</a>
-				<a href=#>Gallery</a> <!-- To DO! -->
-            </nav>
-            <main>
+            <header  class="main_header" >
+	
+			</header>
+            <nav role="navigation">
+				<div class="container-fluid">
+					<ul class="nav nav-pills justify-content-center">
+
+						<li class="nav-item"><a class="nav-link" href="index.html">Dwarf planets</a></li>
+						<li class="nav-item"><a class="nav-link active" href="pluto.html">Pluto</a></li>
+						<li class="nav-item"><a class="nav-link" href="ceres.html">Ceres</a></li>
+                		<li class="nav-item"><a class="nav-link" href="makemake.html">Makemake</a></li>
+                		<li class="nav-item"><a class="nav-link" href="haumea.html">Haumea</a></li>
+                		<li class="nav-item"><a class="nav-link" href="eris.html">Eris</a></li>
+						<li class="nav-item"><a class="nav-link" href=#>Gallery</a></li> <!-- To DO! -->
+				
+					</ul>
+				</div>
+			</nav>
+            <main class="container-fluid row">
+				<aside class="col-md-2">
+					<header>
+						<p><strong>ON THE PAGE</strong></p>
+					</header>
+                    <nav>
+                        <ul>
+                            <li><a href="#Pluto_main">Overview</a></li>
+                            <li><a href="#Pluto_size">Size and Distance</a></li>
+                            <li><a href="#Pluto_orbit">Orbit and Rotation</a></li>
+                            <li><a href="#Pluto_formation">Formation</a></li>
+                            <li><a href="#Pluto_structure">Structure</a></li>
+                            <li><a href="#Pluto_surface">Surface</a></li>
+                            <li><a href="#Pluto_atmosphere">Atmosphere</a></li>
+                            <li><a href="#Pluto_life">Potential for Life</a></li>
+                            <li><a href="#Pluto_moons">Moons</a></li>
+                            <li><a href="#Pluto_rings">Rings</a></li>
+                            <li><a href="#Pluto_magnetosphere">Magnetosphere</a></li>
+                            <li><a href="#Pluto_numbers">Pluto by the numbers</a></li>
+                        </ul>
+                    </nav>
+                </aside>
+				
 
             
-                <article id="Pluto_main">
+                <article class="col-md-7" id="Pluto_main">
                     <p>
                         Pluto is a complex and mysterious world with mountains, valleys, plains, craters, and maybe glaciers. 
                         Discovered in 1930, Pluto was long considered our solar system's ninth planet. But after the discovery of similar intriguing worlds deeper in the distant Kuiper Belt, 
@@ -172,136 +200,120 @@
                         <header>
                             <h2>Pluto by the numbers</h2>
                         </header>
-                        <table>
+                        <table class="table table-hover table-striped table-responsive-md">
+							<tbody>
 							<tr>
-								<td colspan="2">PLANET</td>
+								<td colspan="2" class="text-center">PLANET</td>
 							</tr>
                             <tr>
                                 <td>Pluto</td>
-                                <td>Earth</td>
+                                <td class="text-right">Earth</td>
                             </tr>
                             <tr>
-                                <td colspan="2">DATE OF DISCOVERY</td>
+                                <td colspan="2" class="text-center">DATE OF DISCOVERY</td>
                             </tr>
                             <tr>
                                 <td>1930</td>
-                                <td>Unknown</td>
+                                <td class="text-right">Unknown</td>
                             </tr>
                             <tr>
-                                <td colspan="2">DISCOVERED BY</td>
+                                <td colspan="2" class="text-center">DISCOVERED BY</td>
                             </tr>
                             <tr>
                                 <td>Clyde Tombaugh</td>
-                                <td>Known by the Ancients</td>
+                                <td class="text-right">Known by the Ancients</td>
                             </tr>
                             <tr>
-                                <td colspan="2">AVERAGE ORBIT DISTANCE</td>
+                                <td colspan="2" class="text-center">AVERAGE ORBIT DISTANCE</td>
                             </tr>
                             <tr>
                                 <td>5,906,440,628km</td>
-                                <td>149,598,262km</td>
+                                <td class="text-right">149,598,262km</td>
                             </tr>
                             <tr>
-                                <td colspan="2">MEAN ORBIT VELOCITY</td>
+                                <td colspan="2" class="text-center">MEAN ORBIT VELOCITY</td>
                             </tr>
                             <tr>
                                 <td>16,809km/h</td>
-                                <td>107,218km/h</td>
+                                <td class="text-right">107,218km/h</td>
                             </tr>
                             <tr>
-                                <td colspan="2">ORBIT ECCENTRICITY</td>
+                                <td colspan="2" class="text-center">ORBIT ECCENTRICITY</td>
                             </tr>
                             <tr>
                                 <td>0.2488273</td>
-                                <td>0.01671123</td>
+                                <td class="text-right">0.01671123</td>
                             </tr>
                             <tr>
-                                <td colspan="2">EQUATORIAL INCLINATION</td>
+                                <td colspan="2" class="text-center">EQUATORIAL INCLINATION</td>
                             </tr>
                             <tr>
                                 <td>122.5 degrees (retrograde rotation)</td>
-                                <td>23.4393 degrees</td>
+                                <td class="text-right">23.4393 degrees</td>
                             </tr>
                             <tr>
-                                <td colspan="2">EQUATORIAL RADIUS</td>
+                                <td colspan="2" class="text-center">EQUATORIAL RADIUS</td>
                             </tr>
                             <tr>
                                 <td>1,151km</td>
-                                <td>6,371.00km</td>
+                                <td class="text-right">6,371.00km</td>
                             </tr>
                             <tr>
-                                <td colspan="2">EQUATORIAL CIRCUMFERENCE</td>
+                                <td colspan="2" class="text-center">EQUATORIAL CIRCUMFERENCE</td>
                             </tr>
                             <tr>
                                 <td>7,231.9km</td>
-                                <td>40,030.2km</td>
+                                <td class="text-right">40,030.2km</td>
                             </tr>
                             <tr>
-                                <td colspan="2">VOLUME</td>
+                                <td colspan="2" class="text-center">VOLUME</td>
                             </tr>
                             <tr>
                                 <td>6,387,259,783km<sup>3</sup></td>
-                                <td>1,083,206,916,846km<sup>3</sup></td>
+                                <td class="text-right">1,083,206,916,846km<sup>3</sup></td>
                             </tr>
                             <tr>
-                                <td colspan="2">DENSITY</td>
+                                <td colspan="2" class="text-center">DENSITY</td>
                             </tr>
                             <tr>
                                 <td>2.050g/cm<sup>3</sup></td>
-                                <td>5.513g/cm<sup>3</sup></td>
+                                <td class="text-right">5.513g/cm<sup>3</sup></td>
                             </tr>
                             <tr>
-                                <td colspan="2">MASS</td>
+                                <td colspan="2" class="text-center">MASS</td>
                             </tr>
                             <tr>
                                 <td>13,090,000,000,000,000,000,000kg</td>
-                                <td>5,972,190,000,000,000,000,000,000kg</td>
+                                <td class="text-right">5,972,190,000,000,000,000,000,000kg</td>
                             </tr>
                             <tr>
-                                <td colspan="2">SURFACE AREA</td>
+                                <td colspan="2" class="text-center">SURFACE AREA</td>
                             </tr>
                             <tr>
                                 <td>16,647,940km<sup>2</sup></td>
-                                <td>510,064,472km<sup>2</sup></td>
+                                <td class="text-right">510,064,472km<sup>2</sup></td>
                             </tr>
                             <tr>
-                                <td colspan="2">SURFACE GRAVITY</td>
+                                <td colspan="2" class="text-center">SURFACE GRAVITY</td>
                             </tr>
                             <tr>
                                 <td>0.66m/s<sup>2</sup></td>
-                                <td>9.80665m/s<sup>2</sup></td>
+                                <td class="text-right">9.80665m/s<sup>2</sup></td>
                             </tr>
                             <tr>
                                 <td colspan="2">ESCAPE VELOCITY</td>
                             </tr>
                             <tr>
                                 <td>4,428km/h</td>\
-                                <td>40,284km/h</td>
+                                <td class="text-right">40,284km/h</td>
                             </tr>
+                            </tbody>
                         </table>
                     </section>
                 </article>
             </main>
-			    <aside>
-                    <nav>
-                        <ul>
-                            <li><a href="#Pluto_main">Overview</a></li>
-                            <li><a href="#Pluto_size">Size and Distance</a></li>
-                            <li><a href="#Pluto_orbit">Orbit and Rotation</a></li>
-                            <li><a href="#Pluto_formation">Formation</a></li>
-                            <li><a href="#Pluto_structure">Structure</a></li>
-                            <li><a href="#Pluto_surface">Surface</a></li>
-                            <li><a href="#Pluto_atmosphere">Atmosphere</a></li>
-                            <li><a href="#Pluto_life">Potential for Life</a></li>
-                            <li><a href="#Pluto_moons">Moons</a></li>
-                            <li><a href="#Pluto_rings">Rings</a></li>
-                            <li><a href="#Pluto_magnetosphere">Magnetosphere</a></li>
-                            <li><a href="#Pluto_numbers">Pluto by the numbers</a></li>
-                        </ul>
-                    </nav>
-                </aside>
-                <footer>
-                    <img  class="footer_image" src=pictures/sky_footer.jpg>
-                </footer>
+			    
+                <footer class=" main_footer"> 
+			</footer>
 	</body>
 </html>

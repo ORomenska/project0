@@ -46,6 +46,7 @@ aside ul li {
     margin-bottom:10px;
     line-height: 1;
 }
+<<<<<<< HEAD
 
 article p {
     text-align: justify;
@@ -84,3 +85,19 @@ section p:last-child {
     margin-bottom:20px;
 
 }
+=======
+article p {
+	text-align: justify;
+	text-justify: inter-word;
+}
+section ul li {
+	text-align: justify;
+	text-justify: inter-word;	
+}
+#planet_definition li {
+	padding-bottom:10px;
+	text-align: justify;
+	text-justify: inter-word;
+}
+
+>>>>>>> 2cd2c0becfdc3cf37d213f4a1966be4d192a88b9

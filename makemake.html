@@ -5,24 +5,57 @@
 			<meta charset="utf-8">
 			<meta lang="en-US">
 			<meta name="viewport" content="width=device-width, initial-scale=1">
-			<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+			<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 			<link rel="stylesheet" href="styles/style.css">	
 	</head>
 	<body>
-		<header>
-			<img class="header_image" src="pictures/sky_header.jpg"
+		<header  class="main_header" >
+	
 		</header>
-		<nav>
-			<a href="index.html">Dwarf planets</a>
-			<a href="pluto.html">Pluto</a>
-            <a href="ceres.html">Ceres</a>
-            <a href="makemake.html">Makemake</a>
-            <a href="haumea.html">Haumea</a>
-            <a href="eris.html">Eris</a>
-            <a href=#>Gallery</a> <!-- To DO! -->
-		</nav>
-		<main>
-			<article id="Makemake_main">
+		<nav role="navigation">
+				<div class="container-fluid">
+					<ul class="nav nav-pills justify-content-center">
+
+						<li class="nav-item"><a class="nav-link" href="index.html">Dwarf planets</a></li>
+						<li class="nav-item"><a class="nav-link" href="pluto.html">Pluto</a></li>
+						<li class="nav-item"><a class="nav-link" href="ceres.html">Ceres</a></li>
+                		<li class="nav-item"><a class="nav-link active" href="makemake.html">Makemake</a></li>
+                		<li class="nav-item"><a class="nav-link" href="haumea.html">Haumea</a></li>
+                		<li class="nav-item"><a class="nav-link" href="eris.html">Eris</a></li>
+						<li class="nav-item"><a class="nav-link" href=#>Gallery</a></li> <!-- To DO! -->
+				
+					</ul>
+				</div>
+			</nav>
+		<main class="container-fluid row">
+			<aside class="col-md-2"
+			<header>
+				<p><strong>ON THE PAGE</strong></p>
+			</header>>
+			<nav>
+				<ul>
+					<li><a href="#Makemake_main">Overview</a></li>
+					<li><a href="#Makemake_discovery">Discovery</a></li>
+					<li><a href="#Makemake_size">Size and Distance</a></li>
+					<li><a href="#Makemake_orbit">Orbit and Rotation</a></li>
+					<li><a href="#Makemake_formation">Formation</a></li>
+					<li><a href="#Makemake_structure">Structure</a></li>
+					<li><a href="#Makemake_surface">Surface</a></li>
+					<li><a href="#Makemake_atmosphere">Atmosphere</a></li>
+					<li><a href="#Makemake_life">Potential for Life</a></li>
+					<li><a href="#Makemake_moons">Moons</a></li>
+					<li><a href="#Makemake_rings">Rings</a></li>
+					<li><a href="#Makemake_magnetosphere">Magnetosphere</a></li>
+					<li><a href="#Makemake_exploration">Exploration</a></li>
+					<li><a href="#Makemake_dates">Significant Dates</a></li>
+					<li><a href="#Makemake_numbers">By the numbers</a></li>
+				</ul>
+			</nav>
+			</aside>
+			
+			
+			
+			<article class="col-md-7" id="Makemake_main">
 				<p>
 					Along with fellow dwarf planets Pluto, Eris and Haumea, Makemake is located in the Kuiper Belt, a region outside the orbit of Neptune. 
 					Slightly smaller than Pluto, Makemake is the second-brightest object in the Kuiper Belt as seen from Earth (while Pluto is the brightest). 
@@ -155,76 +188,57 @@
 					<header>
 						<h2>By the numbers</h2>
 					</header>
-					<table>
+					<table class="table table-hover table-striped table-responsive-md">
+						<tbody>
 						<tr>
-							<td colspan="2">PLANET</td>
+							<td colspan="2" class="text-center">PLANET</td>
 						</tr>
 						<tr>
 							<td>Makemake</td>
-							<td>Earth</td>
+							<td class="text-right">Earth</td>
 						</tr>
 						<tr>
-							<td colspan="2">DATE OF DISCOVERY</td>
+							<td colspan="2" class="text-center">DATE OF DISCOVERY</td>
 						</tr>
 						<tr>
 							<td>31 Mar. 2005</td>
-							<td>Unknown</td>
+							<td class="text-right">Unknown</td>
 						</tr>
 						<tr>
-							<td colspan="2">DISCOVERED BY</td>
+							<td colspan="2" class="text-center">DISCOVERED BY</td>
 						</tr>
 						<tr>
 							<td>M. E. Brown, C. A. Trujillo, and D. L. Rabinowitz</td>
-							<td>Known by the Ancients</td>
+							<td class="text-right">Known by the Ancients</td>
 						</tr>
 						<tr>
-							<td colspan="2">AVERAGE ORBIT DISTANCE</td>
+							<td colspan="2" class="text-center">AVERAGE ORBIT DISTANCE</td>
 						</tr>
 						<tr>
 							<td>6,783,345,606km</td>
-							<td>149,598,262km</td>
+							<td class="text-right">149,598,262km</td>
 						</tr>
 						<tr>
-							<td colspan="2">MEAN ORBIT VELOCITY</td>
+							<td colspan="2" class="text-center">MEAN ORBIT VELOCITY</td>
 						</tr>
 						<tr>
 							<td>15,816km/h</td>
-							<td>107,218km/h</td>
+							<td class="text-right">107,218km/h</td>
 						</tr>
 						<tr>
-							<td colspan="2">ORBIT ECCENTRICITY</td>
+							<td colspan="2" class="text-center">ORBIT ECCENTRICITY</td>
 						</tr>
 						<tr>
 							<td>0.163844964</td>
-							<td>0.01671123</td>
+							<td class="text-right">0.01671123</td>
 						</tr>
+						</tbody>
 					</table>
 				</section>
 			</article>
 		</main>
-		<aside>
-			<nav>
-				<ul>
-					<li><a href="#Makemake_main">Overview</a></li>
-					<li><a href="#Makemake_discovery">Discovery</a></li>
-					<li><a href="#Makemake_size">Size and Distance</a></li>
-					<li><a href="#Makemake_orbit">Orbit and Rotation</a></li>
-					<li><a href="#Makemake_formation">Formation</a></li>
-					<li><a href="#Makemake_structure">Structure</a></li>
-					<li><a href="#Makemake_surface">Surface</a></li>
-					<li><a href="#Makemake_atmosphere">Atmosphere</a></li>
-					<li><a href="#Makemake_life">Potential for Life</a></li>
-					<li><a href="#Makemake_moons">Moons</a></li>
-					<li><a href="#Makemake_rings">Rings</a></li>
-					<li><a href="#Makemake_magnetosphere">Magnetosphere</a></li>
-					<li><a href="#Makemake_exploration">Exploration</a></li>
-					<li><a href="#Makemake_dates">Significant Dates</a></li>
-					<li><a href="#Makemake_numbers">By the numbers</a></li>
-				</ul>
-			</nav>
-		</aside>
-		<footer>
-			<img  class="footer_image" src=pictures/sky_footer.jpg>
+		
+		<footer class=" main_footer"> 
 		</footer>
 	</body>
 
