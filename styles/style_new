@@ -1,4 +1,5 @@
-/* main header and footer styling */
+/* Using Sass variable $bgnd-img*/
+/* Basic class for header and footer */
 .main_footer, .main_header {
   background-image: url(../pictures/header_footer.jpg);
   width: 100%;
@@ -6,10 +7,12 @@
   background-repeat: repeat-x;
 }
 
+/* main_header extends %header-footer with header oriented properties */
 .main_header {
   height: 100px;
 }
 
+/* main_footer extends %header-footer with footer oriented properties */
 .main_footer {
   height: 120px;
 }
@@ -37,7 +40,7 @@
   padding-bottom: 0px;
 }
 
-/* main element styling */
+/* main element styling*/
 main {
   padding-top: 100px;
   padding-bottom: 50px;
@@ -66,7 +69,7 @@ aside ul li {
   text-justify: inter-word;
 }
 
-/* article styling */
+/* using Saas nesting for article layout */
 article header {
   text-align: center;
 }
@@ -119,4 +122,4 @@ section ul li {
   height: 100%;
 }
 
-/*# sourceMappingURL=style_new.css.map */
+/*# sourceMappingURL=style_new.map */

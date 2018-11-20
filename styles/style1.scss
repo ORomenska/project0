@@ -1,24 +1,32 @@
 
-/*@media screen and (min-width:768px) {
-.navbar-nav {
-    float:none;
-    text-align:center;
-}
-.navbar-nav li {
-    display:inline-block;
-    float:none;
-}
-}
-*/
+
+/* main header and footer styling */
+// Using Sass variable $bgnd-img
 $bgnd-img:url(../pictures/header_footer.jpg);
 
+// Basic class for header and footer 
 %header-footer {
  	background-image: $bgnd-img;
-        width:100%;
+    width:100%;
 	background-position: center;
-        background-repeat: repeat-x;
+    background-repeat: repeat-x;
 }
 
+// main_header extends %header-footer with header oriented properties 
+.main_header {
+	@extend %header-footer;
+    height:100px;   
+}
+
+// main_footer extends %header-footer with footer oriented properties 
+.main_footer {
+	@extend %header-footer;
+    height:120px;
+}
+
+
+
+/* Styling text inside header */
 .main_header p {
     text-shadow: 2px 2px 6px white;
     font-size:45px;
@@ -28,8 +36,11 @@ $bgnd-img:url(../pictures/header_footer.jpg);
     color:rgba(255, 255, 255, 0.3);;
     vertical-align: middle; 
 }
-.main_footer p {
 
+
+
+/* Styling text inside header */
+.main_footer p {
     text-shadow: 2px 2px 2px white;
     font-size:15px;
     letter-spacing: 2px;
@@ -40,28 +51,26 @@ $bgnd-img:url(../pictures/header_footer.jpg);
     padding-bottom:0px;
 }
 
-    .main_header  {
-	@extend %header-footer;
-        height:100px;
-        
-    
-    }
 
-    .main_footer {
-	@extend %header-footer;
-        height:120px;
-    }
 
-    main {
-        padding-top:50px;
-    }
+/* main element styling */
+main {
+    padding-top:100px;
+    padding-bottom:50px;
+}
     
 
-@media screen and (max-width:768px){
+
+/* Remove aside from screen when its width less than 768px */
+@media screen and (max-width:768px) {
     aside{
         display: none;
     }
 }
+
+
+
+/* aside links layout */
 aside ul {
     list-style-type:none;
     padding-left:0px;
@@ -73,73 +82,66 @@ aside ul li {
 
 
 
+/* layout of significant dates section */
 .significant_dates li {
     text-align: justify;
     text-justify: inter-word; 
 }
 
-main {
 
-    padding-top:100px;
-    padding-bottom:50px;
-}
-
+/* article styling */
+// using Saas nesting for article layout 
 article {
 	header {
-
-    		text-align:center;
+    	text-align:center;
 	}
-	p {
-		
+	p {	
 		text-align: justify;
 		text-justify: inter-word;
 		text-indent: 25px;
-    		margin-bottom:0;
+    	margin-bottom:0;
 	}
 }
-							
 
 
 
-/*section p:first-child {
-
-    margin-top:20px;
-}
-*/ 
-section p:last-child {
-    
+/* section elements styling */
+section p:last-child {   
     margin-bottom:20px;
-
 }
-
-
-
 section ul li {
 	text-align: justify;
 	text-justify: inter-word;	
 }
+
+
+
+/* planet definition section in index.html layout */
 #planet_definition li {
 	padding-bottom:10px;
 	text-align: justify;
 	text-justify: inter-word;
 }
 
-.carousel-inner img {
-		width: 100%;
-		height: 100%;
-		}
-.carousel-caption p {
-		text-align:center;
-		}
+
+
+/* Gallery carousel styling */
 #Gallery {
-		width:30%;
-		margin: auto;
-		}
+	width:30%;
+	margin: auto;
+}
 .carousel-caption {
-        top: 0;
-        bottom: auto;
-        }
+    top: 0;
+    bottom: auto;
+}
+.carousel-caption p {
+    text-align:center;
+}
 .carousel-caption h3,p {
-       text-align:center;
-       text-indent:0;
-        }
+    text-align:center;
+    text-indent:0;
+}
+.carousel-inner img {
+    width: 100%;
+    height: 100%;
+}
