@@ -1,3 +1,4 @@
 # Project 0
 
-Web Programming with Python and JavaScript
+Page about dwarf planets.
+Technology stack:HTML,CSS,Bootstrap,Sass
